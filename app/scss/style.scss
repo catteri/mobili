@@ -364,8 +364,9 @@ margin-top:50px;
                 line-height: 0;
                 button{
                     font-size: 10px;
+                    @extend %rubik-700;
                     outline:none;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #fff;
                     opacity: 0.3;
                     width:26px;
                     height: 26px;
@@ -373,17 +374,20 @@ margin-top:50px;
                     border:1px solid transparent;
                     position:relative;
                 }
-
-                }
                  &.slick-active{
-                 li{
-                    button{
-                    background-color: #fff;
+                button{
+                    border-color: transparent;
                     opacity:1;
-                    }
                 }
+                }
+
             }
+
         }
+
+    }
+
+
 
 
 

@@ -3,5 +3,6 @@ $ (function () {
       dots: true,
       arrows:false
     });
+  
     
 });
