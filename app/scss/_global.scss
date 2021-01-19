@@ -8,6 +8,7 @@ body{
 
 .main{
     flex-grow: 1;
+    margin-bottom:40px;
 }
 
 .container{
@@ -16,15 +17,6 @@ body{
     padding:0 15px;
 }
 
-.container{
-    max-width: 1200px;
-    margin:0 auto;
-    padding:0 15px;
-}
-
-.container-slider{
-    max-width: 1560px;
-}
 
 a{
     text-decoration:none;
