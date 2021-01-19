@@ -355,7 +355,37 @@ margin-top:50px;
         text-transform: none;
         }
 
-}
+         .slick-dots{
+            display:flex;
+            justify-content: center;
+            padding-top:-70px;
+            li{
+                padding: 0 5px;
+                line-height: 0;
+                button{
+                    font-size: 10px;
+                    outline:none;
+                    background-color: rgb(255, 255, 255);
+                    opacity: 0.3;
+                    width:26px;
+                    height: 26px;
+                    border-radius:50%;
+                    border:1px solid transparent;
+                    position:relative;
+                }
+
+                }
+                 &.slick-active{
+                 li{
+                    button{
+                    background-color: #fff;
+                    opacity:1;
+                    }
+                }
+            }
+        }
+
+
 
 
 @import 'media';
