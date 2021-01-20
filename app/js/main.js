@@ -1,7 +1,9 @@
 $ (function () {
     $('.top__slider').slick({
       dots: true,
-      arrows:false
+      arrows: false,
+      fade: true,
+      autoplay:true
     });
   
     
