@@ -5,6 +5,7 @@ $ (function () {
       fade: true,
       autoplay:true
     });
+
   
     
 });
