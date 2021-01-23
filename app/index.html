@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Clee.</title>
 </head>
 <body>
-     <header class="header">
-         <div class="container">
-             <div class="header__inner">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
                 <a class="logo" href="#">
                     <img src="images/logo.svg" alt="logo">
                     Clee.
@@ -80,13 +81,13 @@
                         </a>
                     </div>
                 </div>
-             </div>
-         </div>
-     </header>
-     <main class="main">
-         <section class="slider">
-             <div class="container__slider">
-                 <div class="top__slider">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <div class="container__slider">
+                <div class="top__slider">
                         <div class="top__slider-item">
                             <div class="top__slider-content">
                                 <h3 class="top__slider-title">
@@ -143,13 +144,13 @@
                             </div>
                             <img class="top__slider-img" src="images/slider/sofa.png" alt="image">
                         </div>
-                 </div>
-             </div>
-         </section>
+                </div>
+            </div>
+        </section>
 
-         <section class="reason">
-             <div class="container__slider">
-                 <div class="top__reason">
+        <section class="reason">
+            <div class="container__slider">
+                <div class="top__reason">
                     <div class="top__reason-items">
                         <div class="top__reason-content">
                             <img src="images/icons/24.svg" alt="24-hours">
@@ -194,13 +195,13 @@
                             </p>
                         </div>
                     </div>
-                 </div>
-             </div>
-         </section>
+                </div>
+            </div>
+    </section>
 
-         <section class="products__category">
-             <div class="container">
-                 <div class="products">
+        <section class="products__category">
+            <div class="container">
+                <div class="products">
                     <h4 class="products__title">
                         Products of week
                     </h4>
@@ -751,11 +752,11 @@
                         </div>
                     </div>
                     
-                 </div>
-             </div>
-         </section>
+                </div>
+            </div>
+     </section>
 
-         <section class="light">
+        <section class="light">
              <div class="container">
                  <div class="light__inner">
 
@@ -796,10 +797,10 @@
                     </div>
                  </div>
              </div>
-         </section>
+        </section>
 
-         <section class="new">
-             <div class="container">
+        <section class="new">
+            <div class="container">
                 <div class="new">
                     <h4 class="new__title">
                         Products of week
@@ -910,15 +911,16 @@
             </div>
         </section>
 
-
+        <section class="video-inner">
         <div class="video">
                     <div class="video__popup" style="background-image: url('images/video/video.jpg');">
 
-                    <a class="video__play" data-fancybox href="https://www.youtube.com/watch?v=d7dpcDhgClg">
+                    <a class="video__play" target="_parent" data-fancybox href="https://www.youtube.com/watch?v=d7dpcDhgClg">
                         <img src="../images/video/play.png" alt="play">
                     </a>
-                 </div>
+                </div>
             </div>
+        </section>
 
             <section class="blog">
                 <div class="container">
@@ -1019,10 +1021,10 @@
         </div>
     </main>
 
-     <footer class="footer">
-         <div class="container">
-             <div class="footer__top">
-                 <div class="footer__top-items">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-items">
                     <div class="footer__top-logo-img">
                     <a class="logo" href="#">
                         <img src="images/logo.svg" alt="logo">
@@ -1135,14 +1137,14 @@
                     <p class="footer__bottom-text">
                         ©2020 CopyRight Example. All rights reserved.
                     </p>
-                 </div>
-                 <div class="footer__bottom-items">
-                     <nav class="footer__bottom-menu">
-                         <ul class="footer__bottom-list">
-                             <li class="footer__bottom-item footer__bottom-item__menu">
-                                 <a class="footer__bottom-link" href="#">
+                </div>
+                <div class="footer__bottom-items">
+                    <nav class="footer__bottom-menu">
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-item footer__bottom-item__menu">
+                                <a class="footer__bottom-link" href="#">
                                     Home
-                                 </a>
+                                </a>
                             </li>
                             <li class="footer__bottom-item footer__bottom-item__menu">
                                 <a class="footer__bottom-link" href="#">
@@ -1161,13 +1163,14 @@
                                     Contact
                                 </a>
                             </li>
-                         </ul>
-                     </nav>
-                 </div>
-                 
-             </div>
-         </div>
-     </footer>
-</body>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.min.js"></script>
+</body>
 </html>
