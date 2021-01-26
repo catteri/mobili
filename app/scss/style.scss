@@ -692,7 +692,6 @@ margin-top:50px;
 
 .video{
     &__popup{
-        max-width: 1840px;
         width:100%;
         height: 495px;
         display:flex;
@@ -711,14 +710,12 @@ margin-top:50px;
 }
 
 .blog{
-
     background: linear-gradient(180deg, rgba(255,255,255,1) 65%, rgba(254,247,240,1) 50%);
     &__title-inner{
-        display:flex;
-        align-items:center;
-        justify-content: space-between;
-        height: 70px;
-
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 70px;
     }
     &__title{
         justify-self:flex-start;
@@ -737,17 +734,14 @@ margin-top:50px;
     &__title-link__img{
         padding-left:20px;
     }
-    
     &__content{
         display:grid;
         grid-template-columns: repeat(3,1fr);
         column-gap:30px;
     }
-
     &__content-inner{
         position:relative;
     }
-
     &__content-btn{
         position: absolute;
         left:0;
@@ -759,20 +753,17 @@ margin-top:50px;
         border:none;
         margin:auto;
     }
-
     &__content-btn__link{
         color:#fff;
         font-style: bold;
         font-size:14px;
         font-family:inherit;
     }
-
     &__info{
         display:grid;
         grid-template-columns: repeat(3,1fr);
         column-gap:30px;
     }
-
     &__content-inner{
         background-repeat: no-repeat;
         background-size:contain;
@@ -781,7 +772,6 @@ margin-top:50px;
         max-width:370px;
         height: 250px;
     }
-
     &__info-item{
         background-color:#fff;
         display:flex;
@@ -790,7 +780,6 @@ margin-top:50px;
         max-width:370px;
         height: 170px;
     }
-
     &__info-text{
         justify-content: center;
         @extend %dmsans-700;
@@ -801,7 +790,6 @@ margin-top:50px;
     .autor{
         position:relative;
     }
-
     .autor::before,
     .date::before{
         content:'';
@@ -812,7 +800,6 @@ margin-top:50px;
         top: 5px;
         left: -14px;
         background: radial-gradient(circle, rgba(34,41,51,1) 11%, rgba(255,255,255,1) 18%, rgba(34,41,51,1) 69%, rgba(34,41,51,0.4918713516063904) 100%);
-
     }
 }
 
@@ -823,15 +810,14 @@ margin-top:50px;
         color:$title;
         border-top: 1px solid #e0e0e0;
         padding:20px 0 0 15px;
-        
     }
 
     .partners{
         background-color:#fef7f0;
         &__inner{
-            display:flex;
-            justify-content: space-between;
-            padding:100px 0;
+        display:flex;
+        justify-content: space-between;
+        padding:100px 0;
         }
     }
 
@@ -878,7 +864,7 @@ margin-top:50px;
             @extend %rubik-700;
             padding:15px 0 0 5px;
             &:first-child{
-                margin-top:31px;
+            margin-top:31px;
             }
 
         }
@@ -911,11 +897,11 @@ margin-top:50px;
             @extend %dmsans-700;
             position:relative;
             span{
-                display:block;
-                color:#4c4c4c;
-                font-size:16px;
-                line-height: 26px;
-                @extend %rubik-700;
+            display:block;
+            color:#4c4c4c;
+            font-size:16px;
+            line-height: 26px;
+            @extend %rubik-700;
             }
         }
         &__experience-img{
@@ -1073,7 +1059,7 @@ margin-top:50px;
 }
 
 .articles{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 37%, rgba(254,247,240,1) 32%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 36%, rgba(254,247,240,1) 32%);
     margin-bottom:70px;
 
     &__title-inner{
@@ -1172,6 +1158,33 @@ margin-top:50px;
     &__link + .articles__link{
         margin-left:30px;
     }
+}
+
+.conditions{
+    &__items{
+        margin-bottom:75px;
+    }
+    &__title{
+        font-size:24px;
+        text-transform:capitalize;
+        @extend %rubik-700;
+        color:$headertitle;
+        padding-top:50px;
+        margin-bottom:40px;
+    }
+ ol {
+   list-style-type: decimal-leading-zero;
+   padding-left:27px;
+   }
+   &__text,
+   &__item{
+        font-size:16px;
+        @extend %rubik-400;
+        line-height: 30px;
+        color:$headertitle;
+        margin-bottom: 35px;
+   }
+  
 }
 
         
