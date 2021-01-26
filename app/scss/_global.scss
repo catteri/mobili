@@ -25,6 +25,24 @@ a{
     line-height: 36px;  
 }
 
+.button{
+       display:flex;
+        align-items:center;
+        justify-content: space-between;
+        border:none;
+        background-color:#a3bbc8;
+        padding: 20px 30px;
+}
+
+.btn__link{
+    color:#fff;
+        padding-right: 50px;
+        font-size:15px;
+        line-height: 15px;
+        @extend %rubik-700;
+        text-transform: none;
+}
+
 .breadcrumbs{
     text-align:center;
     &__title{
