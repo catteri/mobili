@@ -83,3 +83,11 @@ a{
     }
 
 }
+
+.shop-filter__title{
+    @extend %dmsans-700;
+    font-size:18px;
+    color:$headertitle;
+    margin-bottom:30px;
+    text-transform: uppercase;
+}
