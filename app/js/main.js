@@ -1,18 +1,12 @@
 $(function () {
-  
-   /*  $('.shop-filter__price-input').ionRangeSlider({
-    type: "double",
-    prefix: "$",
-    onStart: function (data) {
-      $('.shop-filter__price-from').text(data.from);
-      $('.shop-filter__price-to').text(data.to);
-        },
-    onChange: function (data) {
-      $('.shop-filter__price-from').text(data.from);
-      $('.shop-filter__price-from').text(data.to);
-        },
 
+  /* $('.shop-content__btn-buy').on('click', function () {
+        $('.shop-content__btn-buy').toggleClass('shop-content__btn-buy--active');
     }); */
+  
+  $('.shop-star').rateYo({
+    ratedFill: "#ffcc00"
+  });
   
   $(".shop-filter__price-input").ionRangeSlider({
         type: "double",
