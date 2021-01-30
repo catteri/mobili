@@ -1,9 +1,26 @@
 $(function () {
 
-  /* $('.shop-content__btn-buy').on('click', function () {
-        $('.shop-content__btn-buy').toggleClass('shop-content__btn-buy--active');
-    }); */
+  $( '.btn1' ).on('click', function(){ 
+    $('.add-btn-1').css("display", "block").addClass('.add-btn-1--active'); 
+  });
+
+  $( '.btn2' ).on('click', function(){ 
+	  $('.add-btn-2').css( "display", "block" ).toggleClass('.add-btn-2--active'); 
+  });
+
+  $( '.btn3' ).on('click', function(){ 
+	  $('.add-btn-3').css( "display", "block" ).toggleClass('.add-btn-3--active'); 
+  });
+
+  $( '.btn4' ).on('click', function(){ 
+	  $('.add-btn-4').css( "display", "block" ).toggleClass('.add-btn-4--active'); 
+  });
   
+   $('.shop-content__btn-buy').on('click', function () {
+    $('.shop-content__btn-buy').removeClass('shop-content__btn-buy--active');
+    $(this).addClass('shop-content__btn-buy--active');
+  });
+
   $('.shop-star').rateYo({
     ratedFill: "#ffcc00"
   });
