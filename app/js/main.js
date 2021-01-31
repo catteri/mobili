@@ -1,5 +1,24 @@
 $(function () {
 
+  $('.select-style, .product-one__filter-num').styler();
+
+
+   $('.product-slider__inner-thumb').slick({
+    asNavFor: '.product-slider__inner-big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+
+  $('.product-slider__inner-big').slick({
+    asNavFor: '.product-slider__inner-thumb',
+    draggable: false,
+    arrows: false,
+    fade:true
+  });
+
   $( '.btn1' ).on('click', function(){ 
     $('.add-btn-1').css("display", "block").addClass('.add-btn-1--active'); 
   });
