@@ -1493,6 +1493,10 @@ transition: all .3s;
           background-color:$decor;  
         }
     }
+    .pagination__link--active{
+        background-color:$decor;
+        color: #fff;
+    }
         
 
     &__link{
@@ -1506,6 +1510,8 @@ transition: all .3s;
           color: #fff;  
         }
     }
+
+    &__prev,
     &__next{
         widows: 50px;
         height: 50px;
@@ -1521,6 +1527,10 @@ transition: all .3s;
           background-color: $decor; 
           color:#fff; 
         }
+    }
+
+    &__prev{
+        display:none;
     }
 }
 
