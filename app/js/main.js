@@ -1,5 +1,16 @@
 $(function () {
 
+  $('.related-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<img class="slider-arrows-one slider-arrows__left" src="images/icons/arrow-left-product.svg" alt="prew"></a>',
+    nextArrow: '<img class="slider-arrows-one slider-arrows__right" src="images/icons/arrow-right-product.svg" alt="next"></a>',
+    });
+
   $('.select-style, .product-one__filter-num').styler();
 
 
