@@ -481,16 +481,23 @@ button{
     &__items + .products__items{
         margin-left:30px;
     }
-    &__link{
+
+    &__items{
+        border:none;
+        background:transparent;
+        outline:none;
+        cursor:pointer;
         color:#8f8f8f;
         line-height: 26px;
         @extend %dmsans-400;
         transition:all .3s;
-    }
-    &__link:hover{
+        &:hover{
         color:#343434;
         @extend %dmsans-400;
+        outline:none; 
+        }
     }
+    
     &__item_price{
         color:$decor;
         line-height: 40px;

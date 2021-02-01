@@ -80,6 +80,8 @@ $(function () {
             controls: 0,
             showinfo: 0
         }
-    });
+   });
+  
+  var mixer = mixitup('.products__inner');
   
 });
