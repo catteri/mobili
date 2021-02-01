@@ -497,7 +497,7 @@ button{
         outline:none; 
         }
     }
-    
+
     &__item_price{
         color:$decor;
         line-height: 40px;
@@ -732,6 +732,7 @@ button{
 }
 
 .video{
+    margin-bottom:86px;
     &__popup{
         width:100%;
         height: 495px;

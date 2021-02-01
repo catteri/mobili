@@ -83,5 +83,7 @@ $(function () {
    });
   
   var mixer = mixitup('.products__inner');
+
+  var mixer = mixitup('.new__inner');
   
 });
