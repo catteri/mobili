@@ -285,15 +285,25 @@ margin-top:50px;
         justify-content: space-between;
     }
 
-
     &-link{
         color:$text;
         font-size:14px;
         line-height: 14px;
-        @extend %rubik-700;
+        @extend %rubik-400;
         padding:0 18px;
-        border-left: 1px solid  #a3b4ba;
+        position:relative;
     }
+
+    &-link::before{
+        position:absolute;
+        content:'';
+        width:1px;
+        height: 14px;
+        background-color:#a3b4ba;
+        bottom:0;
+        right:0;
+    } 
+
 }
 
 .container__slider{
