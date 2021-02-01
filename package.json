@@ -24,6 +24,7 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "gulp-uglify": "^3.0.2",
     "jquery-form-styler": "^2.0.2",
     "mixitup": "^3.3.1",

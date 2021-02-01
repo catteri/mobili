@@ -75,11 +75,10 @@ $(function () {
       autoplay:true
     });
   
-  $('[data-fancybox]').fancybox({
+   $('[data-fancybox]').fancybox({
         youtube : {
             controls: 0,
-            showinfo: 0,
-            autoplay:true
+            showinfo: 0
         }
     });
   
