@@ -200,7 +200,7 @@ margin-top:50px;
     }
 
     &-title__form{
-        padding-bottom: 43px;
+        padding-bottom: 22px;
     }
 
     &-form{
@@ -224,7 +224,7 @@ margin-top:50px;
 
     &-logo-img{
         margin-top: -25px;
-        padding-bottom: 36px;
+        padding-bottom: 16px;
     }
 
     &-contact{
@@ -247,8 +247,12 @@ margin-top:50px;
     &-link{
         color:$text;
         font-size:14px;
-        line-height: 24px;
-        @extend %rubik-700;
+        line-height: 20px;
+        @extend %rubik-400;
+    }
+
+    &-item{
+        padding-bottom:10px;
     }
 
     &-text{
@@ -283,6 +287,7 @@ margin-top:50px;
     &-list{
         display:flex;
         justify-content: space-between;
+        padding-top: 40px;
     }
 
     &-link{
