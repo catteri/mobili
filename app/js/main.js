@@ -1,5 +1,7 @@
 $(function () {
 
+  $('.select-style, .modal-form__checkbox').styler();
+
   $('.related-slider').slick({
     dots: false,
     arrows: true,
