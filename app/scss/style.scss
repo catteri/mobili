@@ -318,93 +318,112 @@ margin-top:50px;
 }
 
 .top__slider{
-    background-image: url(../images/slider-bg.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    background-position: top center;
     position:relative;
+    width: 100%;
     &-item{
-        display:flex !important;
-        justify-content: space-between;
+        display:flex !important ;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
     }
 
     &-content{
-    padding:210px 0 0 130px;
+    max-width:500px;
+    height: 400px;
+    padding-top: 20px;
+    margin-right:70px;
+    }
+
+    &__box{
+    max-width:700px;
+    height: 400px;
     }
 
     &-img{
-    padding:110px 130px 80px 0px;
+    height: 264px;
+    max-width: 640px;
+    width:100%;  
+    margin: auto;
     }
     
     &-title{
         max-width:670px;
         font-size:70px;
-        line-height: 72px;
+        line-height: 80px;
         color:$headertitle;
-        @extend %dmsans-400;
+        @extend %rubik-400;
         white-space: nowrap;
-        margin-bottom: 43px;
+        margin-bottom: 28px;
         }
         
     &-text{
         color:$accent;
         font-size:18px;
-        line-height: 30px;
-        @extend %dmsans-400;
+        line-height: 28px;
+        @extend %rubik-400;
         max-width:333px;
-        margin-bottom: 43px;
+        margin-bottom: 28px;
         }
 
-    &-btn{
-        display:flex;
-        align-items:center;
-        justify-content: space-between;
-        border:none;
-        background-color:$decor;
-        padding: 20px 30px;
-        }
 
-    &-link{
+    .top__slider-link {
         color:#fff;
-        padding-right: 50px;
         font-size:15px;
         line-height: 15px;
         @extend %rubik-400;
         text-transform: none;
+        display:block;
+        height:60px;
+        max-width: 200px;
+        width:100%;
+        text-align:left;
+        border:none;
+        background-color:$decor;
+        padding:20px 15px;
+        position:relative;
+        span{
+            position:absolute;
+            text-align:right;
+            right:10px;
+            top: 23px;
         }
-
-        .slick-dots{
-            display:flex;
-            justify-content: center;
-            li{
-                padding: 0 5px;
-                line-height: 0;
-                button{
-                    top:-150px;
-                    font-size: 10px;
-                    @extend %rubik-700;
-                    outline:none;
-                    background-color: #fff;
-                    opacity: 0.3;
-                    width:26px;
-                    height: 26px;
-                    border-radius:50%;
-                    border:1px solid transparent;
-                    position:relative;
-                }
-                &.slick-active{
-                button{
-                    border-color: transparent;
-                    opacity:1;
-                }
-                }
-
-            }
-
-        }
-
     }
+}
+
+.slick-dots{
+    display:flex;
+    justify-content: center;
+li{
+    padding: 0 5px;
+    line-height: 0;
+button{
+    bottom:40px;
+    font-size: 10px;
+    @extend %rubik-700;
+    outline:none;
+    background-color: #fff;
+    opacity: 0.3;
+    width:26px;
+    height: 26px;
+    border-radius:50%;
+    border:1px solid transparent;
+    position:relative;
+    }
+}
+.slick-active{
+    button{
+    border-color: transparent;
+    opacity:1;
+}}
+}
+
+
+
+
+
 
 .top__reason{
     margin-top:10px;
