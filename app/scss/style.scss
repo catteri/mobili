@@ -526,6 +526,11 @@ button{
             margin:40px auto 0;
             display:flex;
         }
+        &:hover{
+        .products__shopping{
+            opacity:1;
+        }
+        }
     }
     
 
@@ -552,32 +557,15 @@ button{
     }
 
     &__shopping{
-        position:absolute;
-        left:0;
-        right:0;
-        text-align: center;
-        bottom:120px; 
-        transition:all .3s;
-        opacity:0;
+        @extend %links__box;
     }
 
-    &__shopping:hover{
-        opacity:1;
+
+    &__shopping-link{
+        @extend %link__item;
     }
 
-    &__shopping-btn{
-        padding: 10px 0 8px;
-        border:1px solid transparent;
-        outline:none;
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-        transition:all .3s;
-    }
-
-    &__shopping-btn:hover{
+    &__shopping-link:hover{
         background-color:$decor;
         .cls-1 {
          fill: #fff;
@@ -1863,26 +1851,11 @@ transition: all .3s;
     }
     
     &-slider__links{
-        margin-top: -20px;
-        display:flex;
-        justify-content: space-evenly;
-        opacity:0;
+        @extend %links__box;
     }
 
     &-slider__link{
-        background-color: #fff;
-        border:1px solid transparent;
-        width: 50px;
-        height: 50px;
-        border-radius:50%;
-        padding: 12px;
-        &:hover{
-           background-color: $decor;
-           outline:none;
-           path{
-               fill:#fff;
-           } 
-        }
+        @extend %link__item;
     }
 
 
