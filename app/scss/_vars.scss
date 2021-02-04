@@ -53,3 +53,27 @@ $decor:#a3bbc8;
 
 
 }
+
+%link-btn{
+        color:#fff;
+        font-size:15px;
+        line-height: 15px;
+        @extend %rubik-400;
+        text-transform: none;
+        display:block;
+        height:60px;
+        max-width: 200px;
+        width:100%;
+        text-align:left;
+        border:none;
+        background-color:$decor;
+        padding:20px 15px;
+        position:relative;
+        outline:none;
+        span{
+            position:absolute;
+            text-align:right;
+            right:10px;
+            top: 23px;
+        }
+    }
