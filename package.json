@@ -21,11 +21,13 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "ion-rangeslider": "^2.3.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "mixitup": "^3.3.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "gulp-uglify": "^3.0.2",
-    "mixitup": "^3.3.1",
+    "jquery-form-styler": "^2.0.2",
     "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1"
   }
