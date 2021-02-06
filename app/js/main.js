@@ -85,5 +85,14 @@ $(function () {
   var mixer = mixitup('.products__inner');
 
   var mixer = mixitup('.new__inner');
+
+  let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat:28.064869761324896, lng: -82.29926301791274 },
+    zoom: 8,
+  });
+}
   
 });
