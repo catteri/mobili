@@ -2321,16 +2321,9 @@ transition: all .3s;
 }
 
 .comments{
-    .comments__title{
-        font-size:24px;
-        line-height: 36px;
-        @extend %rubik-700;
-        color:$accent;
-        padding:68px 0 64px;
-        text-transform: capitalize;
-    }
     &__inner{
         display:flex;
+        width: 842px;
     }
 
     &__img{
@@ -2345,6 +2338,9 @@ transition: all .3s;
 
     &__content-top{
         display:flex;
+        justify-content: space-between;
+        
+
     }
     .comments__content-name{
         font-size:16px;
@@ -2366,6 +2362,7 @@ transition: all .3s;
         @extend %rubik-400;
         color:#565872;
         max-width: 700px;
+        padding-bottom:30px;
     }
     &__content-reply{
         color:#526278;
@@ -2384,6 +2381,7 @@ transition: all .3s;
 
     }
     &__answer{
+        width:700px;
         border-top:1px solid #ebebeb;
         border-bottom:1px solid #ebebeb;
         margin-left: 130px;
@@ -2446,6 +2444,15 @@ transition: all .3s;
     }
 }
 
+.box-title__box{
+        font-size:24px;
+        line-height: 36px;
+        @extend %rubik-700;
+        color:$accent;
+        padding:90px 0 60px;
+        text-transform: capitalize;
+    }
+
 .contact{
     &-title__box{
         text-align:center;
@@ -2467,6 +2474,7 @@ transition: all .3s;
     }
     &-inner{
         display:flex;
+        padding-bottom:120px;
     }
     &-item{
         display: flex;
@@ -2560,17 +2568,22 @@ transition: all .3s;
     }
 }
 
-.map{
-        padding: 120px 0;
-        &-inner{
-            display:flex;
-            justify-content: space-between;
+.box{
+    padding-bottom:30px;
+    &-inner{
+        display:flex;
+        justify-content: space-between;
         }
-        &__form-inner{
-        margin-bottom: 120px;
+    &-form__input-inner{
+        display:flex;
+        justify-content:space-between;
+        max-width:670px;
+        width:100%;
+        }             
+    &-form__input + .box-form__input{
+        margin-left:20px;
     }
-
-    &-form__input{
+    .box-form__input{
         width:300px;
         height: 50px;
         border:none;
@@ -2582,27 +2595,51 @@ transition: all .3s;
         @extend %rubik-400;
         color:#565872;
         background-color:#fafafa;
+        text-transform:none;
+        &::placeholder{
+        font-size:16px;
+        line-height: 30px;
+        @extend %rubik-400;
         text-transform:uppercase;
+        }    
     }
-    &-form__input + .map-form__input{
-        margin-left:20px;
-    }
+    &-form__img{
+        position: relative;
+        z-index: 1;
+        margin-top: 16px;
+        margin-left: -45px;
+        img{
+        padding-right: 11px;
+        }
+        }
     &-form__textarea{
         width:620px;
         height: 180px;
         display:block;
         border:none;
         margin:20px 0 44px;
-        padding:20px 0;
+        padding:20px;
         resize:none; 
         cursor:pointer;       
         font-size:16px;
         line-height: 30px;
         @extend %rubik-400;
         color:#565872;
-        text-transform:uppercase;
+        text-transform:none;
         outline: none;
         background-color:#fafafa;
+        &::placeholder{
+        font-size:16px;
+        line-height: 30px;
+        @extend %rubik-400;
+        text-transform:uppercase;
+        }  
+    }
+    &-form__text-img{
+        position: relative;
+        z-index: 1;
+        top: 28px;
+        right: -295px;
     }
     &__form-button{
         display:block;
@@ -2617,6 +2654,15 @@ transition: all .3s;
         width: 100%;
         width: 500px;
         height: 340px;
+    }
+
+    .box-title__item{
+        font-size:36px;
+        line-height: 46px;
+        @extend %rubik-700;
+        color:$accent;
+        padding:90px 0 60px;
+        text-transform: capitalize;
     }
 
     
