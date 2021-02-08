@@ -1,5 +1,17 @@
 $(function () {
 
+  $('.description-tabs__top-item').on('click', function (e) {
+    
+    e.preventDefault();
+    $('.description-tabs__top-item').removeClass('description-tabs__top-item--active');
+    $(this).addClass('description-tabs__top-item--active');
+
+    $('.description-tabs__content-item').removeClass('description-tabs__content-item--active');
+    $($(this).attr('href')).addClass('description-tabs__content-item--active');
+
+
+  });
+
   $('.select-style, .modal-form__checkbox').styler();
 
   $('.related-slider').slick({
