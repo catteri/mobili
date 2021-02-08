@@ -1,0 +1,134 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+
+.footer{
+    background-color: #fff;
+}
+
+.footer__top{
+    display:flex;
+    border-bottom:1px solid #a3b4ba;
+    &-title{
+        color:#1f2044;
+        font-size:16px;
+        line-height: 21px;
+        text-transform:uppercase;
+        @extend %dmsans-700; 
+        padding-bottom:25px;
+    }
+
+    &-title__form{
+        padding-bottom: 22px;
+    }
+
+    &-form{
+        max-width:380px;
+    }
+    input{
+        background-color:#fef7f0;
+        outline:none;
+        border:none;
+        cursor:pointer;
+        padding: 13px 10px;
+    }
+
+    button{
+        background-color:$decor;
+        color:#fff;
+        padding: 13px 20px;
+        border:none;
+        cursor:pointer;
+    }
+
+    &-logo-img{
+        margin-top: -25px;
+        padding-bottom: 16px;
+    }
+
+    &-contact{
+        max-width: 240px;
+    }
+
+    &-about{
+        margin:0 160px 80px 100px;
+    }
+
+    &-account{
+        margin:0 160px 110px 0;
+    }
+
+    &-form,
+    &-adress,
+    &-email,
+    &-phone,
+    &-text,
+    &-link{
+        color:$text;
+        font-size:14px;
+        line-height: 20px;
+        @extend %rubik-400;
+    }
+
+    &-item{
+        padding-bottom:10px;
+    }
+
+    &-text{
+        padding-bottom:25px;
+    }
+
+    &-adress,
+    &-email,
+    &-phone{
+        padding-bottom:20px;
+    }
+}
+
+.footer__bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:40px;
+
+    &-text{
+        padding-top:40px;
+        color:$text;
+        font-size:14px;
+        line-height: 24px;
+        @extend %rubik-400;
+    }
+
+    &-menu{
+        display:flex;
+    }
+
+    &-list{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    &-link{
+        color:$text;
+        font-size:14px;
+        line-height: 14px;
+        @extend %rubik-400;
+        padding:0 18px;
+        position:relative;
+    }
+
+    &-link::before{
+        position:absolute;
+        content:'';
+        width:1px;
+        height: 14px;
+        background-color:#a3b4ba;
+        bottom:0;
+        right:0;
+    } 
+
+}

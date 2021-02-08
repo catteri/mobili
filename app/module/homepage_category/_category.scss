@@ -1,0 +1,114 @@
+.products{
+    margin-bottom:80px;
+    &__title{
+        text-align:center;
+        font-size:36px;
+        line-height: 42px;
+        @extend %dmsans-700;
+        color:$title;
+        margin-bottom:40px;
+    }
+    &__list{
+        display:flex;
+        justify-content:center;
+    }
+    &__items + .products__items{
+        margin-left:30px;
+    }
+
+    &__items{
+        border:none;
+        background:transparent;
+        outline:none;
+        cursor:pointer;
+        color:#8f8f8f;
+        line-height: 26px;
+        @extend %dmsans-400;
+        transition:all .3s;
+        &:hover{
+        color:#343434;
+        @extend %dmsans-400;
+        outline:none; 
+        }
+    }
+
+    &__item_price{
+        color:$decor;
+        line-height: 40px;
+        @extend %dmsans-700;
+    }
+
+    &__inner{
+        display:grid;
+        max-width: 100%;
+        min-height:380px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap:30px;
+        margin-bottom:80px;
+    }
+
+    &__item-box{
+        padding:15px;
+        min-height:380px;
+        background-color:#fff;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        background-repeat:no-repeat;
+        background-position: center;
+        position:relative;
+        img{
+            margin:40px auto 0;
+            display:flex;
+        }
+        &:hover{
+        .products__shopping{
+            opacity:1;
+        }
+        }
+    }
+    
+
+    &__item-info{
+        display:flex;
+        flex-direction: column;
+        justify-self: center;
+        margin:40px auto;
+        max-width: 150px;
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+    &__item-link{
+        color:#343434;
+        @extend %dmsans-700;
+        text-align: center;
+        sup{
+            display:block;
+            color:$decor;
+        }
+    }
+
+    &__shopping{
+        @extend %links__box;
+    }
+
+
+    &__shopping-link{
+        @extend %link__item;
+    }
+
+    &__shopping-link:hover{
+        background-color:$decor;
+        .cls-1 {
+         fill: #fff;
+         fill-rule: evenodd;
+        }
+    }
+
+    &__shop-img{
+         transform: translateY(-26px);
+         
+    }
+}

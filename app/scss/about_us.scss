@@ -1,0 +1,14 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+@import '../module/header/_header.scss';
+@import '../module/footer/_footer.scss';
+@import '../module/section_top/_breadcrumbs';
+@import '../module/about_team/_team';
+@import '../module/about_mission/_mission';
+@import '../module/about_experience/_experience';
+
+@import '../module/articles/_articles';
+@import '../module/partners/_partners';

@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+@import '../module/header/_header.scss';
+@import '../module/footer/_footer.scss';
+@import '../module/section-slider/__header-slider';
+@import '../module/homepage_reason/_reason';
+@import '../module/homepage_category/_category';
+@import '../module/homepage_light/_light';
+@import '../module/homepage_new/_new';
+@import '../module/homepage_video/_video';
+@import '../module/articles/_articles';
+@import '../module/partners/_partners';

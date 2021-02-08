@@ -1,0 +1,230 @@
+.contact{
+    &-title__box{
+        text-align:center;
+    }
+
+    &-title{
+        font-size:35px;
+        line-height: 57px;
+        @extend %dmsans-700;
+        color:#436372;
+        margin-bottom:76px;
+    }
+    &-subtitle{
+        font-size:16px;
+        line-height: 20px;
+        @extend %rubik-700;
+        color:#afc4cf;
+        padding-top:70px;
+    }
+    &-inner{
+        display:flex;
+        padding-bottom:120px;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        height: 384px;
+        width:100%;
+        padding: 15px;
+        background-color:#f2f2f2;  
+        &:hover{
+        background-color: rgb(255, 255, 255);
+        border:2px solid $decor;
+                        }
+        &:hover{
+            .contact-item__img-link{
+                background-color:#a3bbc8;
+                svg{
+                    path{
+                        fill:#fff;
+                    }
+                }
+            }
+        }
+                    }
+
+    &-item + .contact-item{
+        margin-left:30px;
+    }
+    
+    &-item__img-link{
+        margin:50px auto;
+        width: 74px;
+        height: 74px;
+        background-color:#fff;
+        border-radius:8px;
+        cursor:pointer;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding:12px;
+        
+        }
+    
+
+    &-item__title-link{
+        margin:10px auto;
+        cursor:pointer;
+        font-size: 20px;
+        line-height: 26px;
+        @extend %dmsans-700;
+        color:#222222;
+    }
+   
+    &-item__text-link{
+        cursor:pointer;
+        font-size: 16px;
+        line-height: 26px;
+        @extend %rubik-400;
+        color:#565872;
+        max-width: 270px;
+        margin: auto;
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    .contact-item__list-email,
+    .contact-item__list-phone{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 270px;
+        margin: auto;
+    }
+    &-item__items{
+        margin:0 auto;
+        cursor:pointer;
+        font-size: 16px;
+        line-height: 26px;
+        @extend %rubik-400;
+        color:#565872;
+    }
+    &-item__email-link,
+    &-item__phone-link{
+        margin:0 auto;
+        cursor:pointer;
+        font-size: 16px;
+        line-height: 26px;
+        @extend %rubik-400;
+        color:#565872;
+    }
+}
+
+.box{
+    padding-bottom:30px;
+&-inner{
+    display:flex;
+    justify-content: space-between;
+}
+&-form__input-inner{
+    display:flex;
+    justify-content:space-between;
+    max-width:670px;
+    width:100%;
+    }             
+&-form__input + .box-form__input{
+    margin-left:20px;
+}
+.box-form__input{
+    width:300px;
+    height: 50px;
+    border:none;
+    outline: none;
+    padding:20px;
+    cursor:pointer;
+    font-size:16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color:#565872;
+    background-color:#fafafa;
+    text-transform:none;
+&::placeholder{
+    font-size:16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    text-transform:uppercase;
+    }    
+}
+&-form__img{
+    position: relative;
+    z-index: 1;
+    margin-top: 16px;
+    margin-left: -45px;
+img{
+    padding-right: 11px;
+    }
+    }
+&-form__textarea{
+    width:620px;
+    height: 180px;
+    display:block;
+    border:none;
+    margin:20px 0 44px;
+    padding:20px;
+    resize:none; 
+    cursor:pointer;       
+    font-size:16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color:#565872;
+    text-transform:none;
+    outline: none;
+    background-color:#fafafa;
+&::placeholder{
+    font-size:16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    text-transform:uppercase;
+    }  
+}
+&-form__text-img{
+    position: relative;
+    z-index: 1;
+    top: 28px;
+    right: -295px;
+    }
+&__form-button{
+    display:block;
+    @extend %link-btn;
+    text-align:center;
+    cursor:pointer;
+    text-transform:uppercase;
+    }
+.input-comment{
+&::placeholder{
+    text-transform:none;
+    }
+}
+
+.comment-btn{
+    margin-bottom:120px;
+}
+    }
+
+.box-title__item{
+    font-size:36px;
+    line-height: 46px;
+    @extend %rubik-700;
+    color:$accent;
+    padding:90px 0 60px;
+    text-transform: capitalize;
+    }
+
+
+.box-title__box{
+    font-size:24px;
+    line-height: 36px;
+    @extend %rubik-700;
+    color:$accent;
+    padding:90px 0 60px;
+    text-transform: capitalize;
+    } 
+
+   #map{
+        width: 100%;
+        width: 500px;
+        height: 340px;
+    }
