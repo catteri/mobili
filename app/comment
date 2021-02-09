@@ -8,4 +8,4 @@
     {%include('app/module/articles/_articles.html')%}
     {% include('app/module/partners/_partners.html') %}          
     </main>
-    {% include('app/module/footer/_footer.html') %}
+   
