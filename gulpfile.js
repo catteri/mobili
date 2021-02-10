@@ -103,4 +103,4 @@ exports.images = images;
 exports.nunjucks = nunjucks;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(nunjucks, styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, nunjucks, browsersync, watching);
