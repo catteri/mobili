@@ -26,13 +26,38 @@
         max-width: 200px;
     }
 
-    &-text__delivery{
+    .text__delivery{
         color:#e0e8ed;
-        white-space: nowrap;
+        white-space: normal;
         padding-bottom:26px;
     }
 
     &-content{
         padding:0 25px 0 0;
     }
+}
+
+@media (max-width:1200px){
+    .top__reason{
+    display:flex;
+    flex-wrap:wrap;
+    &-content{
+        img{
+        object-fit: contain;
+        width: 100%;
+        min-height: 30px;
+        }
+        }
+}
+}
+
+@media (max-width:950px){
+    .top__reason{
+    &-items{
+        border-bottom: 1px solid #e0e8ed;
+        border-right: none;
+        min-width:100%;
+        padding:50px;
+    }
+}
 }
