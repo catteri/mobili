@@ -116,8 +116,8 @@ function initMap() {
     zoom: 8,
   });
   }
-  
 
+  var mixitup = require('mixitup');
   var mixer = mixitup('.products__inner');
 
   var mixer = mixitup('.new__inner');
