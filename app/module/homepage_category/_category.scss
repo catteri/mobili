@@ -28,16 +28,6 @@
             line-height: 30px;
             @extend %poppins-700;   
             position:relative; 
-            &__img-l{
-                left: -18px;
-                position: absolute;
-                bottom: -21px;
-            }
-            &__img-r{
-                right: -19px;
-                position: absolute;
-                bottom: -11px;
-            }
             }
             .icon{
             width: 185px;
@@ -206,6 +196,7 @@
 
 @media (max-width:550px){
     .products{
+        margin: 10px 0;
         &__inner{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;

@@ -58,3 +58,47 @@
         }
     }
 }
+
+@media (max-width:1140px){
+    .light{
+        &__img{
+        width:33%;
+        bottom: 161px;
+        left: -18px;
+    }
+    }
+}
+
+@media (max-width:950px){
+    .light{
+        &__img{
+        max-width: 150px;
+        bottom: 40px;
+        left: 0;
+        }
+
+        &__inner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 60px;
+    }
+    &__item {
+    margin: 40px auto 0;
+}
+    }
+}
+
+@media (max-width:950px){
+    .light{
+        &__img{
+        display: none !important;
+        }
+    }
+}
+
+@media (max-width:340px){
+    .light{
+        &__items{
+        max-width: 320px;
+        }
+    }
+}

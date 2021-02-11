@@ -1,35 +1,97 @@
 .new{
     margin-bottom:80px;
-    &__title{
-        text-align:center;
-        font-size:36px;
-        line-height: 42px;
-        @extend %dmsans-700;
-        color:$title;
-        margin-bottom:40px;
-    }
     &__list{
         display:flex;
         justify-content:center;
+        position:relative;
     }
     &__items + .new__items{
         margin-left:30px;
     }
-    &__link{
+
+    &__items{
+        border:none;
+        background:transparent;
+        outline:none;
+        cursor:pointer;
         color:#8f8f8f;
         line-height: 26px;
         @extend %dmsans-400;
         transition:all .3s;
-    }
-    &__link:hover{
+        &:hover{
         color:#343434;
         @extend %dmsans-400;
+        outline:none; 
+        }
     }
-    &__item_price{
-        color:$decor;
-        line-height: 40px;
-        @extend %dmsans-700;
+    &__btn{
+        display:none;
+        width: 30px;
+        height: 24px;
+        border:none;
+        background-color: transparent;
+        margin: 0 15px;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        padding:0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        cursor:pointer;
+        top: -24px;
+            .text{
+            width: 31px;
+            height: 2px;
+            color: $title;
+            font-size:10px;
+            line-height: 30px;
+            @extend %poppins-700;   
+            position:relative; 
+            }
+            .icon{
+            width: 185px;
+            height: 2px;
+            background-color: $title;
+            position:absolute;
+            }
+    
+        &::before{
+            position: absolute;
+            content:'';
+            width: 250px;
+            height: 3px;
+            background-color: $title;
+        }
+        &::before{
+            top:0;
+        }
     }
+        &__title{
+            text-align:center;
+            font-size:36px;
+            line-height: 42px;
+            @extend %dmsans-700;
+            color:$title;
+            margin-bottom:40px;
+        }
+        
+        /* &__link{
+            color:#8f8f8f;
+            line-height: 26px;
+            @extend %dmsans-400;
+            transition:all .3s;
+        }
+        &__link:hover{
+            color:#343434;
+            @extend %dmsans-400;
+        }
+        &__item_price{
+            color:$decor;
+            line-height: 40px;
+            @extend %dmsans-700;
+        } */
+    
 
     &__inner{
         display:grid;
@@ -73,5 +135,99 @@
             display:block;
             color:$decor;
         }
+    }
+}
+
+@media (max-width:1140px){
+    .new{
+        &__inner{
+        grid-gap:10px;
+    }
+
+    }
+}
+
+@media (max-width:1050px){
+    .new{
+       &__inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap:30px;
+    }
+    }
+}
+
+@media (max-width:860px){
+    .new{
+        &__inner{
+        grid-gap:10px;
+    }
+
+    &__item-box{
+        min-height: 270px;
+        img{
+            max-width: 270px;
+            margin-top: 71px;
+        }
+    }
+    }
+}
+
+
+
+@media (max-width:550px){
+
+.new{
+    margin: 10px 0;
+    &__inner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+   &__btn{
+        display:flex;
+        position:relative;
+        z-index:10;
+    }
+
+    &__list{
+            transform: translateX(-500%);
+            position: absolute;
+            width: 100%;
+            top:-30px;
+            left:0;
+            flex-direction: column;
+            align-items:center;
+            z-index:5;
+            transition:all .3s;
+            padding: 110px 0 50px;
+        &.new__list--active{
+            position: relative;
+            transform: translateX(0);
+            background-color:#fff;
+            box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            transition:all .3s;
+            }
+    }
+
+    &__items{
+        padding-bottom: 28px;
+        color:$title;
+        font-size:22px;
+        line-height: 32px;
+        transition:all .3s;
+
+        &:hover{
+            background-color:$decor;
+            color:#fff;
+            width:100%;
+            padding:16px;
+        }
+    }
+    &__items + .new__items{
+        margin-left:0;
+    }
     }
 }
