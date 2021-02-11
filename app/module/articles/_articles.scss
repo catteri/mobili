@@ -149,13 +149,13 @@
     }
     &__items{
         max-width: 100%;
-        img{
+    }
+    &__item-img{
         min-width: 100%;
         background-size:cover;
         object-fit: cover;
         overflow: hidden;
         }
-    }
     }
 }
 
