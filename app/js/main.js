@@ -37,6 +37,21 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<img class="slider-arrows-one slider-arrows__left" src="images/icons/arrow-left-product.svg" alt="prew"></a>',
     nextArrow: '<img class="slider-arrows-one slider-arrows__right" src="images/icons/arrow-right-product.svg" alt="next"></a>',
+    responsive: [
+    {
+      breakpoint: 1050,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 620,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
     });
 
   $('.select-style, .product-one__filter-num').styler();

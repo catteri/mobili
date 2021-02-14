@@ -135,7 +135,7 @@
 
 .jq-number__spin.plus {
     top: auto;
-    right: 48px;
+    left: 109px;
     bottom: 56%;
     outline:none;
     background-color:transparent;
@@ -149,8 +149,8 @@
     position: absolute;
     top: 2px;
     left: 9px;
-    width: 12px;
-    height: 0;
+    width: 14px;
+    height: 1px;
     border-right: none;
     border-top:none;
     border-bottom: 2px solid rgb(153, 153, 153);
@@ -161,10 +161,10 @@
 .jq-number__spin.plus:before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: 6px;
+    top: -3px;
+    left: 7px;
     width: 1px;
-    height: 12px;
+    height: 14px;
     background-color: #333;
     transform: translateX(8px);
     
@@ -256,18 +256,19 @@
             color:#ffffff;
         }
     }
+
     &__top-item + .description-tabs__top-item{
         margin-left:10px;
     }
    
-   &-text{
+    &-text{
         font-size: 16px;
         line-height: 30px;
         @extend %rubik-400;
         color:$headertitle;
-   }
+    }
 
-   &__content-item {
+    &__content-item {
         display:none;
         &.description-tabs__content-item--active{
             display:block;
@@ -329,4 +330,59 @@
 
     }
    
+}
+
+@media (max-width:1140px){
+    .product{
+        &-slider__inner-thumb {
+        display:none;
+    }
+    }
+}
+
+@media (max-width:950px){
+    .product{
+        .product-slider__inner-big {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+}
+    }
+    .product-one{
+        .product-slider__inner{
+            display: flex;
+            flex-direction: column;
+        }
+        .product-one__btn{
+            margin-top: 30px;
+            width: 100%;
+            margin-left: 0;
+            max-width: 153px;
+        }
+        .product-one__content{
+            max-width: 100%;
+            width:100%;
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width:860px){
+    .description-tabs__top {
+    max-width: 300px;
+    margin: auto;
+    flex-direction: column;
+}
+    .description-tabs{
+        &__top-item + .description-tabs__top-item{
+        margin-left:0;
+    }
+    }
+}
+
+@media (max-width:620px){
+    .description-tabs .comments__img {
+    display: none;
+}
 }
