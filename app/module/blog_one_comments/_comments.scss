@@ -228,3 +228,26 @@ img{
     padding:90px 0 60px;
     text-transform: capitalize;
     } 
+
+
+@media (max-width:860px){
+    .comments{
+        &__inner{
+    width: 100%;
+     }
+
+    .comments__content-text{
+    max-width: 420px;
+    }
+
+    .comments__answer {
+    width: 100%;
+    margin-left:0;
+    }
+    .comments__img{
+    display:none;
+    }
+    }
+
+
+}

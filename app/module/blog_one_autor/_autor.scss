@@ -72,3 +72,23 @@
     }
     
 }
+
+@media (max-width:620px){
+    .autor__info{
+    flex-direction: column;
+}
+
+div.autor__info-box{
+    padding:0;
+}
+}
+@media (max-width:500px){
+    .autor__inner {
+    flex-direction: column;
+}
+.autor__info{
+    img{
+        display:none;
+    }
+}
+}
