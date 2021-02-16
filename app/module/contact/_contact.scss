@@ -181,7 +181,7 @@ img{
     }  
 }
 &-form__text-img{
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 28px;
     right: -295px;
@@ -244,10 +244,10 @@ img{
         &-form__input-inner{
             flex-direction: column;
         }
-        &-form__input{
+        .box-form__input{
             width: 100%;
         }
-        &-form__textarea{
+        .box-form__textarea{
             width: 100%;
             max-width: 664px;
         }
@@ -278,8 +278,23 @@ img{
 }
 }
 
-@media (max-width:748px){
-    .box-form__text-img{
+@media (max-width:440px){
+    
+     .box{
+            padding-bottom:30px;
+       
+        .box-form__input{
+            width: 100%;
+            max-width: 300px;
+        }
+        .box-form__textarea{
+            width: 100%;
+            max-width: 300px;
+        }
+        span{
+        .box-form__text-img{
         display: none;
+        }
     }
+}
 }
