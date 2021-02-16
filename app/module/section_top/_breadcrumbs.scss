@@ -49,3 +49,11 @@
         padding:35px 0;
         margin-bottom: 70px;
     }
+
+@media (max-width:420px){
+    .breadcrumbs{
+    &__title{
+        font-size: 26px;
+    }
+}
+}
