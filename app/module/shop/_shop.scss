@@ -1,12 +1,21 @@
 .shop{
     padding-top:70px;
+    &__filter-btn{
+        display:none;
+        width:100px;
+        height: 100px;
+        background-color: $decor;
+    }
+    &__filter-wrapper{
+        display:flex;
+    }
 }  
-
-
 
 .shop-filter{
     width: 275px;
     display:flex;
+    
+
     &__title-inner{
         display:flex;
         align-items:center;
@@ -58,9 +67,7 @@
     .brand-span:hover{
         opacity:1;
     }
-    &__item-box{
-        display:flex;
-    }
+    
 
     &__item-info{
         max-width:180px;
@@ -110,6 +117,7 @@ max-width:900px;
 width:100%;
 transition: all .3s;
 
+
 &__inner{
     display:grid;
     grid-template-columns: repeat(2, 400px);
@@ -140,6 +148,7 @@ transition: all .3s;
 }
 &__item-info{
     width:100%;
+    margin-left: 60px;
 }
 
 &__item-title{
@@ -332,5 +341,105 @@ transition: all .3s;
 
     &__prev{
         display:none;
+    }
+}
+
+@media (max-width:860px){
+    .shop{
+    &-filter{
+    position: absolute;
+    min-width: 100%;
+    padding: 200px 50px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+    width: 101%;
+    margin-right: 0;
+    }
+
+    
+    &__filter-btn{
+        display:block;
+        border:none;
+        background-color:$subtitle;
+        border:1px solid $headertitle;
+        border-radius:8px;
+        padding:0;
+        width: 60px;
+        height: 60px;
+        position:fixed;
+        right: 16px;
+        z-index:101;
+        bottom:50px;
+        img{
+            padding: 20px;
+        }
+    }
+    &-filter__price-form{
+        max-width: 360px;
+    }
+
+    &-filter__item-price {
+    margin-bottom: 30px;
+    font-size: 18px;
+    }
+    &-filter__item-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    }
+    .jq-ry-container{
+    width: 160px;
+    margin-bottom: 30px;
+    margin-left: -16px;
+    }
+    &-filter__item-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 234px;
+    margin-bottom: 25px;
+    }
+    &-filter__item-content img {
+    padding: 22px 0;
+    margin: auto;
+    width: 100%;
+    max-width: 77px;
+}
+}
+.shop-content{
+        &__item-text{
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width:620px){
+    .shop-content{
+        &__inner{
+            display:flex;
+            flex-direction: column;
+        }
+        &__item-product{
+            margin: auto;
+            max-width: 320px;
+        }
+        &__item-text{
+            max-width: 300px;
+        }
+    }
+
+    .shop{
+        &-content__item-info {
+    padding: 0 20px;
+    width: 100%;
+    margin-left:0;
+}
+
+    &-content__item-product {
+    max-height: 500px;
+    height: auto;
+    }
     }
 }

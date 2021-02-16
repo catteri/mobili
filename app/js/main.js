@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.shop__filter-btn').on('click', function() {
+    $('.shop-filter').slideToggle();
+  });
+
   $('.new__btn').on('click', function() {
     $('.new__list').toggleClass('new__list--active')
   });
