@@ -45,8 +45,8 @@ $(function () {
     {
       breakpoint: 1050,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+      slidesToShow: 2,
+      slidesToScroll: 2
       }
     },
     {
@@ -120,12 +120,15 @@ $(function () {
       autoplay:true
     });
   
-   $('[data-fancybox]').fancybox({
-        youtube : {
-            controls: 0,
-            showinfo: 0
-        }
-   });
+    $('[data-fancybox]').fancybox({
+  youtube : {
+    controls : 0,
+    showinfo : 0
+  },
+  vimeo : {
+    color : 'f00'
+  }
+});
 
   let map;
 
@@ -136,9 +139,8 @@ function initMap() {
   });
   }
 
-  var mixitup = require('mixitup');
-  var mixer = mixitup('.products__inner');
 
+  var mixer = mixitup('.products__inner');
   var mixer = mixitup('.new__inner');
   
 });

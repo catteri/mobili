@@ -106,11 +106,14 @@
 @media (max-width:440px){
     .mission{
         &__experience-item {
-    font-size: 26px;
-    padding: 7px;
+        font-size: 26px;
+        padding: 7px;
     img{
         display: none;
     }
 }
+    &__top-title{
+        padding-right: 0;
+    }
     }
 }
