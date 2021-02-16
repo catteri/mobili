@@ -35,3 +35,16 @@
 
     }
 }
+
+.page__404-link{
+    white-space: nowrap;
+}
+
+@media(max-width:620px){
+    .page__404{
+
+    &-content{
+       display: none;
+    }
+}
+}
