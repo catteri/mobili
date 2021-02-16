@@ -1,0 +1,139 @@
+.container__slider{
+    max-width: 1560px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.top__slider{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position:relative;
+    width: 100%;
+    
+    &-item{
+        display:flex !important ;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+    }
+
+    &-content{
+    max-width:500px;
+    height: 400px;
+    padding-top: 20px;
+    margin-right:70px;
+    }
+
+    &__box{
+    max-width:700px;
+    height: 400px;
+    }
+
+    &-img{
+    height: 264px;
+    max-width: 640px;
+    width:100%;  
+    margin: auto;
+    }
+    
+    &-title{
+    max-width:670px;
+    font-size:70px;
+    line-height: 80px;
+    color:$headertitle;
+    @extend %rubik-400;
+    white-space: nowrap;
+    margin-bottom: 28px;
+    }
+        
+    &-text{
+    color:$accent;
+    font-size:18px;
+    line-height: 28px;
+    @extend %rubik-400;
+    max-width:333px;
+    margin-bottom: 28px;
+    }
+
+
+    .top__slider-link {
+        @extend %link-btn;
+    }
+}
+
+.slick-dots{
+    display:flex;
+    justify-content: center;
+li{
+    padding: 0 5px;
+    line-height: 0;
+button{
+    bottom:40px;
+    font-size: 10px;
+    @extend %rubik-700;
+    outline:none;
+    background-color: #fff;
+    opacity: 0.3;
+    width:26px;
+    height: 26px;
+    border-radius:50%;
+    border:1px solid transparent;
+    position:relative;
+    }
+}
+.slick-active{
+    button{
+    border-color: transparent;
+    opacity:1;
+}}
+}
+
+@media (max-width:1050px){
+    .top__slider{
+        &-title{
+    max-width: 480px;
+    font-size: 48px;
+    line-height: 58px;
+        }
+    &-img{
+        max-width: 100%; 
+        min-width: 320px;
+        height: auto;
+            }
+    }
+}
+
+@media (max-width:860px){
+    .top__slider{
+         &-img{
+            display: none !important;
+            }
+            &-item{
+                padding: 75px;
+            }
+            &-content{
+                    max-width: 500px;
+                    padding:10px;
+                    margin: auto; 
+                    height: auto; 
+            }
+            &-text{
+                min-width: 275px;
+            }
+    }
+}
+
+@media (max-width:550px){
+    .top__slider{
+        &-title{
+    font-size: 36px;
+    line-height: 46px;
+        }
+    }
+}
+
+
+
+
+

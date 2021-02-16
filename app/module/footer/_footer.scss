@@ -1,0 +1,284 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+
+.footer{
+    background-color: #fff;
+}
+
+.footer__top{
+    display:flex;
+    border-bottom:1px solid #a3b4ba;
+    &-title{
+        color:#1f2044;
+        font-size:16px;
+        line-height: 21px;
+        text-transform:uppercase;
+        @extend %dmsans-700; 
+        padding-bottom:25px;
+    }
+
+    &-title__form{
+        padding-bottom: 22px;
+    }
+
+    &-form{
+        max-width:380px;
+    }
+    input{
+        background-color:#fef7f0;
+        outline:none;
+        border:none;
+        cursor:pointer;
+        padding: 13px 10px;
+    }
+
+    button{
+        background-color:$decor;
+        color:#fff;
+        padding: 13px 20px;
+        border:none;
+        cursor:pointer;
+    }
+
+    &-logo-img{
+        margin-top: -25px;
+        padding-bottom: 16px;
+    }
+
+    &-contact{
+        max-width: 240px;
+    }
+
+    &-about{
+        padding:0 160px 80px 100px;
+    }
+
+    &-account{
+        padding:0 160px 110px 0;
+    }
+
+    &-form,
+    &-adress,
+    &-email,
+    &-phone,
+    &-text,
+    &-link{
+        color:$text;
+        font-size:14px;
+        line-height: 20px;
+        @extend %rubik-400;
+    }
+
+    &-item{
+        padding-bottom:10px;
+    }
+
+    &-text{
+        padding-bottom:25px;
+    }
+
+    &-adress,
+    &-email,
+    &-phone{
+        padding-bottom:20px;
+    }
+}
+
+.footer__bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:40px;
+
+    &-text{
+        padding-top:40px;
+        color:$text;
+        font-size:14px;
+        line-height: 24px;
+        @extend %rubik-400;
+    }
+
+    &-menu{
+        display:flex;
+    }
+
+    &-list{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    &-link{
+        color:$text;
+        font-size:14px;
+        line-height: 14px;
+        @extend %rubik-400;
+        padding:0 18px;
+        position:relative;
+    }
+
+    &-link::before{
+        position:absolute;
+        content:'';
+        width:1px;
+        height: 14px;
+        background-color:#a3b4ba;
+        bottom:0;
+        right:0;
+    } 
+
+}
+
+@media (max-width: 1050px){
+    .footer__top{
+        flex-wrap:wrap;
+        padding-bottom: 20px;
+        justify-content: center;
+}
+.footer__bottom{
+    &-text{
+        padding-top:0;
+    }
+
+    }
+}
+
+
+@media (max-width: 950px){
+.footer__top-text {
+    max-width: 250px;
+}
+
+.footer__top{
+    &-contact{
+        max-width: 240px;
+    }
+
+    &-about{
+        padding:0 60px 75px;
+        max-width: 240px;
+    }
+
+    &-account{
+        padding:0 60px 75px;
+        max-width: 240px;
+    }
+}
+}
+@media (max-width: 620px){
+    .footer__bottom{
+      &-list{
+        flex-direction: column;
+        padding-top: 20px;
+    }  
+    &-link::before{
+        display:none;
+    } 
+    &-text{
+        padding-top:20px;
+        max-width:120px;
+    }
+    &-link{
+        padding:18px 0;
+    }
+    &-menu{
+        padding-top: 26px;
+    }
+
+    }
+}
+
+@media (max-width: 550px){
+.footer__top-form {
+    max-width: 240px;
+}
+footer__top input {
+    text-align: center;
+    width: 179px;
+}
+
+.footer__top button {
+    width: 194px;
+}
+.footer__top-text {
+    max-width: 179px;
+}
+
+
+}
+
+@media (max-width: 500px){
+.footer__top {
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &-contact{
+        max-width: 100%;
+    }
+    input,
+    &-form,
+    button,
+    &-text,
+    &-about{
+        max-width: 100%;
+    }
+
+    &-account{
+        max-width:100%;
+    }
+
+    &-items{
+        max-width:100%; 
+    }
+    &-logo-img{
+        display: flex;
+        margin-left: 125px;
+        .logo{
+            font-size: 28px;
+            line-height: 28px;
+            img{
+                max-width: 50%;
+            }
+        }
+    }
+    &-title__form{
+        text-align:left;
+        margin-left: 64px;
+    }
+    &-title__form{
+        text-align:center;
+        margin-left: 0;
+    }
+}
+.footer__top-items {
+    padding: 0 60px 75px;
+    max-width: 100%;
+}
+}
+
+@media (max-width: 340px){
+.footer__top {
+    &-logo-img{
+        margin-left: 0;
+    }
+    &-contact{
+        max-width: 300px;
+    }
+
+    &-about{
+        padding:0 60px 60px;
+        max-width: 300px;
+    }
+
+    &-account{
+        padding:0 60px 60px;
+        max-width: 300px;
+    }
+}
+    
+}

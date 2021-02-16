@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/blog.min.css" />
+    <title>Clee.</title>
+  </head>
+  <body>
+    {% include('app/module/header/_header.html') %}
+    <main class="main">
+      {% include('app/module/section_top/_breadcrumbs_blog.html') %} 
+      {% include('app/module/blog/_blog_pg.html') %} 
+ 
+
+    <div class="pagination">
+                <a class="pagination__prev pagination__arrows" href="#">
+                  PREVIOUS
+                </a>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a
+                      class="pagination__link pagination__link--active"
+                      href="#"
+                    >
+                      1
+                    </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#"> 2 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#"> 3 </a>
+                  </li>
+                </ul>
+                <a class="pagination__next pagination__arrows" href="@">
+                  NEXT
+                </a>
+              </div>
+            </div>
+    </main>
+
+    {% include('app/module/footer/_footer.html')%}
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="js/main.min.js"></script>
+</html>

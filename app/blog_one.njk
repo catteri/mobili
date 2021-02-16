@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/blog_one.min.css" />
+    <title>Clee.</title>
+  </head>
+  <body>
+    {% include('app/module/header/_header.html') %}
+    <main class="main">
+    {% include('app/module/section_top/_breadcrumbs_blog_one.html') %} 
+    {% include('app/module/blog-pg_blog-one/_blog-one.html') %} 
+    {% include('app/module/blog_one_autor/_autor.html') %}
+    {% include('app/module/blog_one_comments/_comments.html') %}  
+    {% include('app/module/partners/_partners.html') %} 
+
+    </main>
+
+    {% include('app/module/footer/_footer.html')%}
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="js/main.min.js"></script>
+</html>
