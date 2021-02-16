@@ -228,3 +228,58 @@ img{
         width: 500px;
         height: 340px;
     }
+
+
+    @media (max-width:1200px){
+        .box{
+            padding-bottom:30px;
+        &-inner{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+}
+        &-item{
+            margin-bottom:40px;
+        }
+        &-form__input-inner{
+            flex-direction: column;
+        }
+        &-form__input{
+            width: 100%;
+        }
+        &-form__textarea{
+            width: 100%;
+            max-width: 664px;
+        }
+}
+
+     #map{
+        width: auto;
+        height: 400px;
+        
+    }
+}
+
+@media (max-width:920px){
+    .contact{
+        &-inner{
+            flex-direction: column;
+        }
+        &-item + .contact-item{
+        margin-left:0;
+    }
+        &-item {
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 30px;
+        height: 384px;
+        width: 100%;
+}
+}
+}
+
+@media (max-width:748px){
+    .box-form__text-img{
+        display: none;
+    }
+}
