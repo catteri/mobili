@@ -47,3 +47,17 @@
             display:block;
         }
     }
+
+    @media (max-width:620px){
+    .experience {
+    max-height: 910px;
+        &__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+        &__item{
+            padding:10px;
+        }
+}
+}

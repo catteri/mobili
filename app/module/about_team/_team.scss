@@ -93,3 +93,36 @@
 }
 
 }
+
+@media (max-width:1140px){
+    .team{
+        &__inner{
+           flex-direction: column;
+        }
+        &__info {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 10px;
+            text-align: left;
+            padding-bottom: 50px;
+}
+}
+}
+
+@media (max-width:860px){
+    .team{
+        &__content-inner {
+    grid-template-columns: repeat(1, 1fr);
+}
+    }
+}
+
+@media (max-width:860px){
+    .team{
+        &__item-box {
+        max-width:310px;
+        width: auto;
+        bottom:0;
+}
+    }
+}
